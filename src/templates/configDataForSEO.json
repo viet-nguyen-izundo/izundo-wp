@@ -1,0 +1,32 @@
+{
+   "home": {
+      "title": "Welcome to Izundo",
+      "description": "We build Amazing software",
+      "image": "src/images/gatsby-icon.png"
+   },
+   "philosophy": {
+      "title": "Pholisophy",
+      "description": "Make Technology Work for Human Beings, Not The Other Way Around",
+      "image": ""
+   },
+   "whatWeDo": {
+      "title": "What We Do",
+      "description": "Offer software development services",
+      "image": ""
+   },
+   "howWeWork": {
+      "title": "How We Work",
+      "description": "The company makes good software",
+      "image": ""
+   },
+   "team": {
+      "title": "Team",
+      "description": "Izundo's experienced development team",
+      "image": ""
+   },
+   "contact": {
+      "title": "Contact",
+      "description": "Contact to us",
+      "image": ""
+   }
+}
