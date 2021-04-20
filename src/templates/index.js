@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core"
 import ImageBackground from "../images/images_homenowords-01.jpg"
 import FlickerEffect from "../components/flickerEffect"
 import { default as jsonSEO } from '../templates/configDataForSEO';
+
 const useStyles = makeStyles(() => ({
    image: {
       display: 'flex',
@@ -160,18 +161,19 @@ const listWordHome = ['ENJOYED', 'LIVED', 'SIMPLIFIED', 'BALANCED', 'MODERNIZED'
 
 const homeSEO = jsonSEO.home;
 
-const BlogIndex = ({ data: { post }, location }) => {console.log(post)
-   console.log(post)
+const BlogIndex = ({ data: { post }, location }) => {
    const classes = useStyles()
    const siteTitle = post.title || `Title`;
-
+   
    const stripHtml = (html) => {
-      var temporalDivElement = document.createElement("div");
-      temporalDivElement.innerHTML = html;
-      return temporalDivElement.textContent || temporalDivElement.innerText || "";
+      var temporalDivElement = typeof document !== `undefined` ? document.createElement('div') : null;
+      // var temporalDivElement = document.createElement("div");
+      if(temporalDivElement) temporalDivElement.innerHTML = html;
+      
+      return temporalDivElement !== null ? temporalDivElement.textContent || temporalDivElement.innerText || "" : "";
    };
 
-   const artic = post.content.split('</p>');
+   const artic = post.content.split('</p>');console.log(artic)
 
 
    return (
