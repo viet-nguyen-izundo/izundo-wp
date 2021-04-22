@@ -1,0 +1,7 @@
+inputs:
+  login:
+    description: 'viet.nguyen@izundo.com'
+    required: true
+  token:
+    description: 'c9bdb93e57cbd524ccc0f0f4631fc7dd'
+    required: true
