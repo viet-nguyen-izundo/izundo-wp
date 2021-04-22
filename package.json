@@ -63,6 +63,6 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "npm run build && surge public/ izundo-dev.surge.sh"
+    "deploy": "npm run build && surge public/ izundo-test.surge.sh"
   }
 }
